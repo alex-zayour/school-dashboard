@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.class-list {
+  list-style: none;
+  padding: 0;
+}
+
+.class-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+.datetime {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.quote {
+  margin: 25px auto;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+  max-width: 500px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #007acc;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.2s ease;
+}
+
+.card:hover {
+  background-color: #005f99;
+}

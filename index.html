@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Mini School Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Live date and time
+    function updateTime() {
+      const now = new Date();
+      document.getElementById("time").innerText = now.toLocaleTimeString();
+      document.getElementById("date").innerText = now.toDateString();
+    }
+    setInterval(updateTime, 1000);
+    window.onload = updateTime;
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Welcome</a>
+    <a href="classes.html">Classes</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="grades.html">Grades</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome, Ali!</h1>
+    <img src="images/LMSimg.jpg" alt="Profile Photo" class="profile-photo">
+    <p>Here’s your dashboard to manage school life easily.</p>
+
+    <!-- Live Date & Time -->
+    <div class="datetime">
+      <p><strong>Today:</strong> <span id="date"></span></p>
+      <p><strong>Time:</strong> <span id="time"></span></p>
+    </div>
+
+    Motivational Message
+    <blockquote class="quote">
+      "Success doesn’t come from what you do occasionally, it comes from what you do consistently."
+    </blockquote>
+
+    <!-- Quick Access Cards -->
+    <div class="cards">
+      <a class="card" href="classes.html">📚 View Classes</a>
+      <a class="card" href="assignments.html">📝 Check Assignments</a>
+      <a class="card" href="grades.html">📊 See Grades</a>
+    </div>
+  </div>
+</body>
+</html>
